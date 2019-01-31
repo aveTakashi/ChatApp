@@ -1,0 +1,28 @@
+
+
+
+<body id="container">
+  <app-navbar></app-navbar>
+  <div id="side-pane">
+      <ul>
+          <li id=message *ngFor="let chatroom of chatRooms"> 
+          </li>
+      </ul>
+  </div>
+  <div id="messages">
+    <ul>
+      <li id=message *ngFor="let message of (chats$ | async)?.MessagesArr"> 
+        <div [ngStyle]="{'background-image':'url(' + message.photoURL + ')'}" id="image"></div>
+        <div id="content">
+          <p id="name">{{ message.DisplayName }}<span id="time">{{ message.Time }}</span></p>
+          <span>{{ message.Message }}</span>
+        </div>
+        <div style="clear:both"></div>
+      </li>
+    </ul>
+  </div>
+  <div id="text">
+      <div [ngStyle]="{'background-image':'url(' + user.photoURL + ')'}" id="image"></div>
+      <input id="enter_text" (keyup.enter)="sendMessage()" [(ngModel)]="message_con">
+  </div>
+</body>
