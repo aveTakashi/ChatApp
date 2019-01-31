@@ -1,7 +1,7 @@
 # ChatApp
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.2.1.
-Its a simple angular app that demos the use of firebase authentication and firebase firestore to create a chat application. Live demo can be found `https://groupchat-e4218.firebaseapp.com`
+Its a simple angular app that demos the use of firebase authentication and firebase firestore to create a chat application. Live demo can be found [https://groupchat-e4218.firebaseapp.com]
 
 ## Development server
 
